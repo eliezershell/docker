@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Removendo resquícios de uma possivel instalção anterior do docker
-sudo apt remove docker.io docker-doc docker-compose podman-docker containerd runc
-sudo apt purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
+sudo apt remove docker.io docker-doc docker-compose podman-docker containerd runc -y
+sudo apt purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras -y
 sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 
