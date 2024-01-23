@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Removendo resquícios de uma possivel instalção anterior do docker
-sudo apt remove docker.io docker-doc docker-compose podman-docker containerd runc -y
-sudo apt purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras -y
-sudo rm -rf /var/lib/docker
-sudo rm -rf /var/lib/containerd
-
 # Adicionando a chave GPG oficial do Docker
 sudo apt update
 sudo apt install ca-certificates curl gnupg -y
@@ -22,9 +16,6 @@ sudo apt update
 
 # Instalando Docker e extensões necessárias
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
-
-# Baixando imagem teste
-sudo docker run hello-world
 
 echo "------------------------------Instalação concluída com sucesso!------------------------------"
 echo "----------------------Script by: Eliezer Ribeiro | linkedin.com/in/elinux--------------------"
