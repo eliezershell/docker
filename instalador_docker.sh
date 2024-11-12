@@ -17,6 +17,15 @@ sudo apt update
 # Instalando Docker e extensões necessárias
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
+# Adicionando usuário padrão ao grupo docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+
+# Ativando o serviço para iniciar junto com o S.O.
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+
 echo "------------------------------Instalação concluída com sucesso!------------------------------"
 echo "----------------------Script by: Eliezer Ribeiro | linkedin.com/in/elinux--------------------"
 exit 0
