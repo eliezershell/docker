@@ -23,5 +23,5 @@ sudo usermod -aG docker $USER
 newgrp docker
 
 # Ativando o serviço para iniciar junto com o S.O.
-#sudo systemctl enable docker.service
-#sudo systemctl enable containerd.service
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
