@@ -25,6 +25,3 @@ newgrp docker
 # Ativando o serviço para iniciar junto com o S.O.
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
-
-echo "------------------------------Instalação concluída com sucesso!------------------------------"
-echo "----------------------Script by: Eliezer Ribeiro | linkedin.com/in/elinux--------------------"
